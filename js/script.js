@@ -9,18 +9,26 @@ function Address(street, estate, phoneDetails) {
     this.phoneDetails = phoneDetails;
 }
 
-// Pizza.prototype.delivery = function() {
-//   return (
-//     this.size +
-//     " " +
-//     this.crust +
-//     " " +
-//     this.toppings +
-//     " " +
-//     "this is your delivery fee"
-//   );
-//   alert(delivery);
-// };
+Pizza.prototype.delivery = function() {
+  return (
+    this.size +
+    " " +
+    this.crust +
+    " " +
+    this.toppings +
+    " " +
+    "this is your delivery fee"
+  );
+
+};
+Address.prototype.totalCost= function() {
+    return (totalCost=1500);
+};
+
+
+
+
+
 $(document).ready(function () {
     $("form#form").submit(function (event) {
         event.preventDefault();
@@ -39,6 +47,10 @@ $(document).ready(function () {
         alert(estate);
         var phoneDetails = $("input#phoneDetails").val();
         alert(phoneDetails);
+
+
+
+        
     });
 
     //   $("#size").click(function() {
