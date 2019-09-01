@@ -1,6 +1,9 @@
 .image{
-    background-image: url(../assets/background-image.jpg);
+    background-image: url(../assets/pizza\ background.jpg);
     height:500px;
+}
+#delivery{
+    display: none;
 }
 
 
