@@ -1,6 +1,11 @@
 .image{
     background-image: url(../assets/pizza\ background.jpg);
     height:500px;
+    text-align: center;
+    color:black;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+padding-top:10%;
 }
 #delivery{
     display: none;
