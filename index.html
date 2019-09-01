@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
         <link rel="stylesheet" href="css/styles.css" type="text/css">
-        <script
-            src="https://code.jquery.com/jquery-3.4.1.js"
+        <script src="https://code.jquery.com/jquery-3.4.1.js"
             integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
         <script src="js/script.js"></script>
 
@@ -16,53 +16,91 @@
 
 
     </head>
+
     <body>
 
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button"
-                data-toggle="collapse"
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse"
-                id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link active" href="#">
-                        <span
-                            class="sr-only">(current)</span>TASTY PIZZA RANCH</a>
+                        <span class="sr-only">(current)</span>TASTY PIZZA RANCH</a>
                     <a class="nav-item nav-link" href="#"></a>
                     <a class="nav-item nav-link" href="#"></a>
                     <a class="nav-item nav-link disabled" href="#"></a>
                 </div>
             </div>
         </nav>
+        <img src="assets/logo2.jpg" alt="logo" class="src" width="200px">
         <div class="image"></div>
+
+
+
+
         <div class="container">
             <form name="form" id="form">
 
-                <h3>SIZE</h3>
-                <input type="radio" name="size" value="small" checked>small<br>
-                <input type="radio" name="size" value="medium">medium<br>
-                <input type="radio" name="size" value="large">large<br><br>
-                <input type="button" name="button" value="Next">
 
-                <h3>CRUST</h3>
+                <div id="size">
+                    <h3>SIZE</h3>
 
-                <input type="radio" name="crust" value="crispy" checked>crispy<br>
-                <input type="radio" name="crust" value="stuffed">stuffed<br>
-                <input type="radio" name="crust" value="gluten-free">gluten-free<br><br>
-                <input type="button" name="button" value="Next">
 
-                <h3>TOPPINGS</h3>
+                    <input type="radio" name="size" value="small" checked>small<br>
+                    <input type="radio" name="size" value="medium">medium<br>
+                    <input type="radio" name="size" value="large">large<br><br>
+                    <input type="button" name="button" value="Next">
+                </div>
 
-                <input type="radio" name="toppings" value="Pepperoni" checked>Pepperoni<br>
-                <input type="radio" name="toppings" value="Onions">Onions<br>
-                <input type="radio" name="toppings" value="Cheese">Cheese<br><br>
-                <button type="submit" id="submit" class="btn btn-info" value="Submit">Submit</button>
+
+                <div id="crust">
+                    <h3>CRUST</h3>
+
+
+                    <input type="radio" name="crust" value="crispy" checked>crispy<br>
+                    <input type="radio" name="crust" value="stuffed">stuffed<br>
+                    <input type="radio" name="crust" value="gluten-free">gluten-free<br><br>
+                    <input type="button" name="button" value="Next">
+                </div>
+
+
+                <div id="toppings">
+                    <h3>TOPPINGS</h3>
+                    <input type="radio" name="toppings" value="Pepperoni"
+                        checked>Pepperoni<br>
+                    <input type="radio" name="toppings" value="Onions">Onions<br>
+                    <input type="radio" name="toppings" value="Cheese">Cheese<br><br>
+                    <input type="button" name="button" value="Next">
+                </div>
+
+                <label class="container">DELIVERY<input type="checkbox"
+                        name="delivery" id="checkbox" value="Delivery"></label<br>
+                <div id="delivery">
+                    <h3>ADDRESS</h3>
+                    <input type="text" class="form-control" name="Street"
+                        id="street"
+                        value="street"><br>
+                    <input type="text" class="form-control" name="Estate"
+                        id="estate"
+                        value="estate"><br>
+                    <input type="text" class="form-control" name="Phone details"
+                        id="phoneDetails"
+                        value="phone details"><br><br>
+
+
+
+
+                </div>
+
+                <button type="submit" id="submit" class="btn btn-info"
+                    value="Submit">Submit</button>
+
 
 
             </form>
@@ -71,30 +109,46 @@
         <div class="container">
             <div class="row">
                 <div class="col"> <img src="assets/background5.jpg"
-                        width="200px"><br> <p>Italian Pizza</p></div>
+                        width="200px"><br>
+                    <p>Italian Pizza</p>
+                </div>
 
                 <div class="col"> <img src="assets/background4.image.jpg"
-                        width="200px"><br> <p>Salad Pizza</p></div>
+                        width="200px"><br>
+                    <p>Salad Pizza</p>
+                </div>
 
                 <div class="col"> <img src="assets/background3-image.jpg"
-                        width="200px"><br><p>Mexican Pizza</p></div>
+                        width="200px"><br>
+                    <p>Mexican Pizza</p>
+                </div>
 
                 <div class="col"> <img src="assets/background2-image.jpg"
-                        width="200px"><br> <p>Kebab Pizza</p></div>
+                        width="200px"><br>
+                    <p>Kebab Pizza</p>
+                </div>
 
             </div>
 
             <div class="row">
                 <div class="col"> <img src="assets/background7.png"
-                        width="200px"><br> <p>Romana Pizza</p></div>
+                        width="200px"><br>
+                    <p>Romana Pizza</p>
+                </div>
 
                 <div class="col"> <img src="assets/bacground6.jpg"
-                        width="200px"><br> <p>Vegetable Pizza</p></div>
+                        width="200px"><br>
+                    <p>Vegetable Pizza</p>
+                </div>
 
                 <div class="col"> <img src="assets/background8.jpg"
-                        width="200px"><br> <p>Cauliflower crust Pizza</p></div>
+                        width="200px"><br>
+                    <p>Cauliflower crust Pizza</p>
+                </div>
                 <div class="col"> <img src="assets/background9.jpg"
-                        width="200px"><br> <p>Neapolitan Pizza</p></div>
+                        width="200px"><br>
+                    <p>Neapolitan Pizza</p>
+                </div>
 
 
             </div>
@@ -108,4 +162,5 @@
 
 
     </body>
+
 </html>
