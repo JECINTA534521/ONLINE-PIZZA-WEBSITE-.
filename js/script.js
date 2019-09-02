@@ -90,6 +90,13 @@ $(document).ready(function () {
        
         $(".list").append("<h4>Your order Summary is:</h4><br>" + "<li>Size:" + pSize + "</li>" + "<li>Crust:" +  pCrust + "</li>" +"<li>Toppings:" + pToppings + "</li><br>" + "<h5>Total cost:" + total + "</h5>   <em> NOTE:An additional 200 will be charged if it is to be delivered</em>" );
 
+        var street = $("input#street").val();
+         var estate = $("input#estate").val();
+         var phoneDetails = $("input#phoneDetails").val();
+
+        let newAddress = new Address(street, estate, phoneDetails);
+        alert(newAddress.addressDetails());
+
 
         // if((pSize == "0") && (pCrust == "0")){
         //     alert("it");
