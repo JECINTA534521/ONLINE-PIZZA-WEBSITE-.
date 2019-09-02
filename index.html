@@ -36,7 +36,7 @@
             </div>
         </div>
     </nav>
-    <img src="assets/logo2.jpg" alt="logo" class="src" width="200px">
+   
     <div class="image">
         <p>Looks sweet.<br> Tastes Better.
             handmade and baked fresh everyday</p>
@@ -46,7 +46,7 @@
         <p>
         </p>
             <h3>SIZE</h3>
-            <select id="size">
+            <select class="form-control form-control-md" id="size">
                 <option selected  value="0">Select</option>
                 <option value="Small">Small --300</option>
                 <option value="Medium">Medium -- 600</option>
@@ -54,7 +54,7 @@
             </select>
 
             <h3>CRUST</h3>
-            <select id="crust">
+            <select class="form-control form-control-lg-6" id="crust">
                     <option selected  value="0">Select</option>
                     <option value="Crispy">Crispy -- 200</option>
                     <option value="Stuffed">Stuffed --200</option>
@@ -68,12 +68,13 @@
            
             <h3>TOPPINGS</h3>
             <p>Each topping cost 100ksh</p>
-            <input type="radio" name="toppings" value="Pepperoni" checked>Pepperoni<br>
-            <input type="radio" name="toppings" value="Onions">Onions<br>
-            <input type="radio" name="toppings" value="Cheese">Cheese<br><br>
+            <input type="radio" class="form-check-input" name="toppings" value="Pepperoni" checked>Pepperoni<br>
+            <input type="radio" class="form-check-input" name="toppings" value="Onions">Onions<br>
+            <input type="radio" class="form-check-input" name="toppings" value="Cheese">Cheese<br><br>
         </div>
-        <label class="container">DELIVERY<input type="checkbox" name="delivery" id="checkbox" value="Delivery">
-            </label<br>
+       
+            <input class="form-check-input" type="checkbox" name="delivery" id="checkbox" value="Delivery">
+            <label class="container" for="checkbox">Delivery</label>
             <div id="delivery">
                 <h3>ADDRESS</h3>
                 <input type="text" class="form-control" name="Street" id="street" placeholder="street"><br>
@@ -85,7 +86,7 @@
             <button type="submit" id="submit" class="btn btn-info" value="Submit">Submit</button>
     </form>
 </div>
-    <ul class="list">
+   <ul class="list">
     </ul>
     <div class="container">
         <div class="row">
