@@ -53,7 +53,7 @@ $(document).ready(function() {
     } else $("input[name=size]:checked", "form").val() === "large";
     var size = $("input[name=size]:checked", "form").val();
     var sizePrice = parseInt(900);
-    alert(size);
+    
 
     // var crust = $("input[name=crust]:checked", "form").val();
     if ($("input[name=small]:checked", "form").val() === "crispy") {
@@ -66,7 +66,7 @@ $(document).ready(function() {
       var crust = $("input[name=crust]:checked", "form").val();
       var crustPrice = parseInt(100);
     }
-    alert(crust);
+
 
     // var toppings = $("input[name=toppings]:checked", "form").val();
 
@@ -78,16 +78,16 @@ $(document).ready(function() {
       var toppingPrice = parseInt(200);
     } else {
       var toppings = $("input[name=crust]:checked", "form").val();
-      alert(toppings);
+      
       var toppingPrice = parseInt(200);
     }
 
     var street = $("input#street").val();
-    alert(street);
+    
     var estate = $("input#estate").val();
-    alert(estate);
+    
     var phoneDetails = $("input#phoneDetails").val();
-    alert(phoneDetails);
+    
 
     if ($("#checkbox").is(":checked")) {
       $(".list").text("your order will be delivered in a few minutes");
