@@ -48,7 +48,7 @@ $(document).ready(function () {
     $("form#form").submit(function (event) {
         event.preventDefault();
 
-        // var size = $("input[name=size]:checked", "form").val();
+       
         if ($("input[name=small]:checked", "form").val() === "small") {
             var size = $("input[name=size]:checked", "form").val();
             var priceSize = parseInt(300);
@@ -61,7 +61,7 @@ $(document).ready(function () {
         ($('#checkbox').is(':checked'))
 
 
-        // var crust = $("input[name=crust]:checked", "form").val();
+        
         if ($("input[name=small]:checked", "form").val() === "crispy") {
             var crust = $("input[name=crust]:checked", "form").val();
             var priceCrust = parseInt(100);
@@ -74,8 +74,7 @@ $(document).ready(function () {
         }
 
 
-        // var toppings = $("input[name=toppings]:checked", "form").val();
-
+       
         if ($("input[name=small]:checked", "form").val() === "crispy") {
             var toppings = $("input[name=crust]:checked", "form").val();
             var priceToppings = parseInt(200);
@@ -94,12 +93,6 @@ $(document).ready(function () {
 
         var phoneDetails = $("input#phoneDetails").val();
 
-
-        // if ($("#checkbox").is(":checked")) {
-        //     $(".list").text("your order will be delivered in a few minutes");
-        // } else {
-        //     $(".list").text("you are free to get your order.");
-        // }
 
         var order = new WholeOrder(priceSize, priceCrust, priceToppings);
         var pizza = new Pizza(size, crust, toppings);
@@ -122,19 +115,7 @@ $(document).ready(function () {
             $("ul.list").append("<h4> Whole Order is : </h4><br><br> " + pizza.ordered() + order.delivery());
         }
 
-        /* $("#size").click(function() 
-          $("#crust").show();
-          $("#size").hide();
-        });
-        $("#crust").click(function() 
-          $("#toppings").show();
-          $("#crust").hide();
-        });
-  
-        $("#toppings").click(function() 
-          $("#submit").show();
-          $("#toppings").hide();
-        }); */
+       
 
     });
 });
