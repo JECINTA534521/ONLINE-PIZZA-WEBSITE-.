@@ -41,47 +41,37 @@
         <p>Looks sweet.<br> Tastes Better.
             handmade and baked fresh everyday</p>
     </div>
-
-
-
-
-
+    <div class="container">
     <form name="form" id="form">
         <p>
-            
         </p>
-
-
-        <div id="size">
             <h3>SIZE</h3>
+            <select id="size">
+                <option selected  value="0">Select</option>
+                <option value="Small">Small --300</option>
+                <option value="Medium">Medium -- 600</option>
+                <option value="Large">Large -- 900</option>
+            </select>
 
-
-            <input type="radio" name="size" value="small" checked>Small <br>
-            <input type="radio" name="size" value="medium">Medium<br>
-            <input type="radio" name="size" value="large">Large<br><br>
-           
-        </div>
-
-
-        <div id="crust">
             <h3>CRUST</h3>
-
-
-            <input type="radio" name="crust" value="crispy" checked>crispy<br>
+            <select id="crust">
+                    <option selected  value="0">Select</option>
+                    <option value="Crispy">Crispy -- 1300</option>
+                    <option value="Stuffed">Stuffed --800</option>
+                    <option value="Gluten-free">Gluten-free -- 600</option>
+            </select>
+            <!-- <input type="radio" name="crust" value="crispy" checked>crispy<br>
             <input type="radio" name="crust" value="stuffed">stuffed<br>
             <input type="radio" name="crust" value="gluten-free">gluten-free<br><br>
-           
-        </div>
-
-
+        </div> -->
         <div id="toppings">
+           
             <h3>TOPPINGS</h3>
+            <p>Each topping cost 100ksh</p>
             <input type="radio" name="toppings" value="Pepperoni" checked>Pepperoni<br>
             <input type="radio" name="toppings" value="Onions">Onions<br>
             <input type="radio" name="toppings" value="Cheese">Cheese<br><br>
-           
         </div>
-
         <label class="container">DELIVERY<input type="checkbox" name="delivery" id="checkbox" value="Delivery">
             </label<br>
             <div id="delivery">
@@ -90,29 +80,18 @@
                 <input type="text" class="form-control" name="Estate" id="estate" value="estate"><br>
                 <input type="text" class="form-control" name="Phone details" id="phoneDetails"
                     value="phone details"><br><br>
-
-
-
-
             </div>
 
             <button type="submit" id="submit" class="btn btn-info" value="Submit">Submit</button>
-
-
-
     </form>
+</div>
     <ul class="list">
-
-
     </ul>
-
-
     <div class="container">
         <div class="row">
             <div class="col"> <img class="img-thumbnail" src="assets/background5.jpg" width="300px"><br>
                 <p>Italian Pizza</p>
             </div>
-
             <div class="col"> <img class="img-thumbnail" src="assets/background4.image.jpg" width="300px"><br>
                 <p>Salad Pizza</p>
             </div>
