@@ -1,4 +1,4 @@
-total = 0;
+// total = 0;
 function Pizza(size, crust, toppings,total) {
     this.size = size;
     this.crust = crust;
@@ -7,7 +7,7 @@ function Pizza(size, crust, toppings,total) {
 }
 
 Pizza.prototype.ordered = function () {
-    return "Your delivery summary is " + this.size + " " + this.crust + " " + this.toppings + " pizza";
+    return "Your order summary is " + this.size + " " + this.crust + " " + this.toppings + " pizza";
 }
 
 function Address(street, estate, phoneDetails) {
@@ -38,7 +38,7 @@ $(document).ready(function () {
     });
 
     $("button#submit").click(function (event) {
-
+     event.preventDefault();
 
         let pSize = $("#size option:selected").val();
         let pCrust = $("#crust option:selected").val();
@@ -48,7 +48,7 @@ $(document).ready(function () {
         $.each($("input[name=toppings]:checked"),function(){
             pToppings.push($(this).val());
         })
-        // alert(pToppings);
+       
         switch(pSize) {
             case "0":
                 price = 0;
@@ -65,29 +65,32 @@ $(document).ready(function () {
             default:
                 console.log("Error");
         }
-        alert(price);
+       
 
         switch (pCrust) {
             case "0":
                 c_price = 0;
                 break;
             case "Crispy":
-                c_price = 1300;
+                c_price = 200;
                 break;
             case "Stuffed":
-                c_price = 800;
+                c_price = 200;
                 break;
             case "Gluten-free":
-                c_price = 600;
+                c_price = 200;
                 break;
             default:
                 console.log("Error");
         }
-        alert(price);
+        
         topping_value = pToppings.length * 100;
-        alert(topping_value);
+        
         total = price + c_price + topping_value;
-        alert(total);
+       
+        $(".list").append("<h4>Your order Summary is:</h4><br>" + "<li>Size:" + pSize + "</li>" + "<li>Crust:" +  pCrust + "</li>" +"<li>Toppings:" + pToppings + "</li><br>" + "<h5>Total cost:" + total + "</h5>   <em> NOTE:An additional 200 will be charged if it is to be delivered</em>" );
+
+
         // if((pSize == "0") && (pCrust == "0")){
         //     alert("it");
         // }else{
